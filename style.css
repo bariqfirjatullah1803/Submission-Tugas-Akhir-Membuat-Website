@@ -1,0 +1,78 @@
+/* Reset beberapa default styling browser */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+article {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Tambahkan CSS untuk menyembunyikan submenu awalnya */
+.dropdown-menu li {
+    display: none;
+}
+
+/* Tampilkan submenu ketika parent elemennya memiliki class 'show' */
+.show li {
+    display: block;
+}
